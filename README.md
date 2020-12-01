@@ -1,4 +1,4 @@
-# string-tools-vue3
+# string-cube-vue3
 
 ## Project setup
 ```
