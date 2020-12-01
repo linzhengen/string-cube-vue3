@@ -7,6 +7,7 @@
             <i class="fab fa-github"></i>
           </a>
         </p>
+        <strong>© 2020 LIN ZHENGEN</strong>
       </div>
     </div>
   </footer>
