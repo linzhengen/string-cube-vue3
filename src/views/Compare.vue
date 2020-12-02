@@ -31,15 +31,15 @@
         <div class="column is-2">
           <div class="columns is-vcentered">
             <div class="column">
-              <button class="button" @click="getDiffB">
-                A→B差分 <i class="fas fa-arrow-right"></i>
+              <button class="button is-small" @click="getDiffB">
+                BにありAにない <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
           <div class="columns">
             <div class="column">
-              <button class="button" @click="getDiffA">
-                B→A差分 <i class="fas fa-arrow-right"></i>
+              <button class="button is-small" @click="getDiffA">
+                AにありBにない <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -53,7 +53,7 @@
           <div class="columns">
             <div class="column">
               <button class="button" @click="getSame">
-                共通抽出 <i class="fas fa-arrow-right"></i>
+                AB共通 <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
