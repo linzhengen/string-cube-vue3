@@ -2,7 +2,7 @@ import Clipboard from 'clipboard';
 import { ElMessage } from 'element-plus';
 
 export const clipboardSuccess = () => ElMessage({
-  message: 'Copy successfully',
+  message: 'クリップボードにコピーしました',
   type: 'success',
   duration: 1500,
 });
