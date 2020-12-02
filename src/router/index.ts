@@ -22,6 +22,11 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Compare',
         component: () => import(/* webpackChunkName: "compare" */ '@/views/Compare.vue'),
       },
+      {
+        path: 'sku',
+        name: 'Sku',
+        component: () => import(/* webpackChunkName: "sku" */ '@/views/Sku.vue'),
+      },
     ],
   },
   {

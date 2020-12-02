@@ -18,6 +18,11 @@
           文字比較
         </router-link>
       </div>
+      <div class="navbar-item is-hoverable">
+        <router-link :to="{ name: 'Sku' }" class="navbar-link is-arrowless">
+          SKUコード生成
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

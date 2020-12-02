@@ -1,4 +1,5 @@
 # string-cube-vue3
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12e9c1d6-609e-4d76-89ca-b5145257466b/deploy-status)](https://app.netlify.com/sites/string-cube/deploys)
 
 ## Project setup
 ```
@@ -25,5 +26,3 @@ yarn test:unit
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
