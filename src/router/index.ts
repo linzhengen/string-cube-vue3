@@ -17,6 +17,11 @@ const routes: Array<RouteRecordRaw> = [
         name: 'CharacterType',
         component: () => import(/* webpackChunkName: "characterType" */ '@/views/CharacterType.vue'),
       },
+      {
+        path: 'compare',
+        name: 'Compare',
+        component: () => import(/* webpackChunkName: "compare" */ '@/views/Compare.vue'),
+      },
     ],
   },
   {

@@ -13,6 +13,11 @@
           文字種変換
         </router-link>
       </div>
+      <div class="navbar-item is-hoverable">
+        <router-link :to="{ name: 'Compare' }" class="navbar-link is-arrowless">
+          文字比較
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

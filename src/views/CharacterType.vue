@@ -12,17 +12,19 @@
           </textarea>
         </div>
         <div class="column is-2">
-          <div class="columns is-vcentered">
+          <div class="columns">
             <div class="column">
               <button class="button" @click="strUpper">
                 大文字に変換 <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </div>
-          <div class="column">
-            <button class="button" @click="strLower">
-              小文字に変換 <i class="fas fa-arrow-right"></i>
-            </button>
+          <div class="columns">
+            <div class="column">
+              <button class="button" @click="strLower">
+                小文字に変換 <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
         </div>
         <div class="column is-5">
@@ -43,7 +45,7 @@
 import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: 'Uniq',
+  name: 'CharacterType',
   data() {
     return {
       rawDataPlaceholder: '入力してください',
