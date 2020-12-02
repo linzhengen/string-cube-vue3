@@ -34,6 +34,7 @@
             readonly
             style="height: 100vh;"
             v-model="convertedData"
+            @click="handleClipboard(convertedData, $event)"
           ></textarea>
         </div>
       </div>
@@ -43,6 +44,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import { handleClipboard } from '@/composables/clipboard';
 
 export default defineComponent({
   name: 'CharacterType',
@@ -58,6 +60,7 @@ export default defineComponent({
     return {
       rawData,
       convertedData,
+      handleClipboard,
     };
   },
   methods: {

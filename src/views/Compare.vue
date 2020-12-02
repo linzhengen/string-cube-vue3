@@ -65,6 +65,7 @@
             readonly
             style="height: 100vh;"
             v-model="compareData"
+            @click="handleClipboard(compareData, $event)"
           ></textarea>
         </div>
       </div>
@@ -75,6 +76,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import _ from 'lodash';
+import { handleClipboard } from '@/composables/clipboard';
 
 export default defineComponent({
   name: 'Diff',
@@ -90,6 +92,7 @@ export default defineComponent({
       baseData: ref<string>(''),
       targetData: ref<string>(''),
       compareData: ref<string>(''),
+      handleClipboard,
     };
   },
   methods: {
