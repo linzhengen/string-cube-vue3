@@ -106,7 +106,7 @@ export default defineComponent({
     create() {
       const sku1List = this.sku1.split('\n').filter((v) => v.trim().length > 0);
       const sku2List = this.sku2.split('\n').filter((v) => v.trim().length > 0);
-      const sku = [];
+      const sku: string[] = [];
       sku1List.forEach((s1) => {
         sku2List.forEach((s2) => {
           sku.push(

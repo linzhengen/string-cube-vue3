@@ -28,16 +28,10 @@
 </template>
 
 <script lang="ts">
-import { useStore } from 'vuex';
-import { key } from '@/store';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'AppNavbar',
-  setup() {
-    const store = useStore(key);
-    console.log(store.state.menuBurger);
-  },
 });
 
 </script>
