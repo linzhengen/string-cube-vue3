@@ -5,21 +5,21 @@
         <div class="column is-5">
           <textarea
             class="textarea is-focused"
-            placeholder="入力してください"
+            :placeholder="rawDataPlaceholder"
             style="height: 100vh;"
-            v-model="data"
+            v-model="rawData"
           >
           </textarea>
         </div>
         <div class="column is-2">
-          <button class="button is-large" @click="convert">
-            変換 <i class="fas fa-arrow-right"></i>
+          <button class="button" @click="convert">
+            重複削除 <i class="fas fa-arrow-right"></i>
           </button>
         </div>
         <div class="column is-5">
           <textarea
             class="textarea"
-            placeholder=""
+            :placeholder="convertedDataPlaceholder"
             readonly
             style="height: 100vh;"
             v-model="convertedData"
@@ -35,18 +35,24 @@ import { defineComponent, ref } from 'vue';
 import _ from 'lodash';
 
 export default defineComponent({
-  name: 'Index',
+  name: 'Uniq',
+  data() {
+    return {
+      rawDataPlaceholder: 'aaa\nbbb\nccc\naaa',
+      convertedDataPlaceholder: 'aaa\nbbb\nccc',
+    };
+  },
   setup() {
-    const data = ref<string>('');
+    const rawData = ref<string>('');
     const convertedData = ref<string>('');
     return {
-      data,
+      rawData,
       convertedData,
     };
   },
   methods: {
     convert() {
-      const list = this.data.split('\n').filter((v) => v.trim().length > 0);
+      const list = this.rawData.split('\n').filter((v) => v.trim().length > 0);
       this.convertedData = _.uniq(list).join('\n');
     },
   },

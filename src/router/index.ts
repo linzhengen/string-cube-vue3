@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Layout from '@/views/layout.vue';
+import Layout from '@/views/Layout.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -9,9 +9,20 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: '',
-        component: () => import(/* webpackChunkName: "index" */ '@/views/Index.vue'),
+        name: 'Home',
+        component: () => import(/* webpackChunkName: "uniq" */ '@/views/Uniq.vue'),
+      },
+      {
+        path: 'character-type',
+        name: 'CharacterType',
+        component: () => import(/* webpackChunkName: "characterType" */ '@/views/CharacterType.vue'),
       },
     ],
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'notFound',
+    component: () => import(/* webpackChunkName: "notFound" */ '@/views/NotFound.vue'),
   },
 ];
 

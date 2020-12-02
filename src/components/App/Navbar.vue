@@ -4,14 +4,14 @@
   >
     <div class="navbar-start">
       <div class="navbar-item is-hoverable">
-        <a
-          class="navbar-link is-arrowless"
-        >重複削除</a>
+        <router-link :to="{ name: 'Home' }" class="navbar-link is-arrowless">
+          重複削除
+        </router-link>
       </div>
       <div class="navbar-item is-hoverable">
-        <a
-          class="navbar-link is-arrowless"
-        >差分抽出</a>
+        <router-link :to="{ name: 'CharacterType' }" class="navbar-link is-arrowless">
+          文字種変換
+        </router-link>
       </div>
     </div>
   </div>
