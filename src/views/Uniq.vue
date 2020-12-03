@@ -40,12 +40,12 @@ export default defineComponent({
   name: 'Uniq',
   data() {
     return {
-      rawDataPlaceholder: 'aaa\nbbb\nccc\naaa',
-      convertedDataPlaceholder: 'aaa\nbbb\nccc',
+      rawDataPlaceholder: '',
+      convertedDataPlaceholder: '',
     };
   },
   setup() {
-    const rawData = ref<string>('');
+    const rawData = ref<string>('aaa\nbbb\nccc\naaa');
     const convertedData = ref<string>('');
     return {
       rawData,

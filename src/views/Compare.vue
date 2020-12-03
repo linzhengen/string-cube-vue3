@@ -82,15 +82,15 @@ export default defineComponent({
   name: 'Diff',
   data() {
     return {
-      baseDataPlaceholder: 'a\nb',
-      targetDataPlaceholder: 'b\nc',
-      comparedDataPlaceholder: 'a',
+      baseDataPlaceholder: '',
+      targetDataPlaceholder: '',
+      comparedDataPlaceholder: '',
     };
   },
   setup() {
     return {
-      baseData: ref<string>(''),
-      targetData: ref<string>(''),
+      baseData: ref<string>('a\nb'),
+      targetData: ref<string>('b\nc'),
       compareData: ref<string>(''),
       handleClipboard,
     };

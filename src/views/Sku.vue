@@ -9,7 +9,7 @@
               <input
                 class="input"
                 type="text"
-                placeholder="PRODUCT-CODE"
+                placeholder=""
                 v-model="productCode"
               >
             </p>
@@ -84,16 +84,16 @@ export default defineComponent({
   data() {
     return {
       glue: '-',
-      sku1Placeholder: 'BK\nDP',
-      sku2Placeholder: 'M\nL',
-      skuProductCodePlaceholder: 'PRODUCT-CODE-BK-M\nPRODUCT-CODE-BK-L\nPRODUCT-CODE-DP-M\nPRODUCT-CODE-DP-L\n',
+      sku1Placeholder: '',
+      sku2Placeholder: '',
+      skuProductCodePlaceholder: '',
     };
   },
   setup() {
-    const productCode = ref<string>('');
-    const sku1 = ref<string>('');
-    const sku2 = ref<string>('');
-    const skuProductCode = ref<string>('');
+    const productCode = ref<string>('PRODUCT-CODE');
+    const sku1 = ref<string>('BK\nDP');
+    const sku2 = ref<string>('M\nL');
+    const skuProductCode = ref<string>('PRODUCT-CODE-BK-M\nPRODUCT-CODE-BK-L\nPRODUCT-CODE-DP-M\nPRODUCT-CODE-DP-L\n');
     return {
       productCode,
       sku1,
