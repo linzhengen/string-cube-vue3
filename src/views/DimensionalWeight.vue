@@ -2,7 +2,7 @@
   <section class="section">
     <div class="container has-text-centered">
       <div class="columns">
-        <div class="column is-4 has-text-centered" style="height: 90vh;">
+        <div class="column is-4 has-text-centered" style="height: 100vh;">
           <h1 class="title">体積重量計算</h1>
           <div class="field is-horizontal">
             <div class="field-label is-normal">
