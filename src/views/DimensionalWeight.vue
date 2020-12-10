@@ -6,7 +6,7 @@
           <h1 class="title">体積重量計算</h1>
           <div class="field is-horizontal">
             <div class="field-label is-normal">
-              <label class="label">縦</label>
+              <label class="label">奥行き</label>
             </div>
             <div class="field-body">
               <div class="field">
@@ -22,7 +22,7 @@
           </div>
           <div class="field is-horizontal">
             <div class="field-label is-normal">
-              <label class="label">横</label>
+              <label class="label">幅</label>
             </div>
             <div class="field-body">
               <div class="field">
@@ -78,7 +78,7 @@
                   <p class="is-size-3">{{ dimensionalWeight }}</p>
                 </div>
                 <p class="help is-danger">
-                  体積重=縦☓横☓高さ/IATA
+                  体積重=奥行き☓幅☓高さ/IATA
                 </p>
               </div>
             </div>
