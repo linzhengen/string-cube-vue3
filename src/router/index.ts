@@ -27,6 +27,11 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Sku',
         component: () => import(/* webpackChunkName: "sku" */ '@/views/Sku.vue'),
       },
+      {
+        path: 'dimensional-weight',
+        name: 'DimensionalWeight',
+        component: () => import(/* webpackChunkName: "dimensionalWeight" */ '@/views/DimensionalWeight.vue'),
+      },
     ],
   },
   {

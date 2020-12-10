@@ -23,6 +23,11 @@
           SKUコード生成
         </router-link>
       </div>
+      <div class="navbar-item is-hoverable">
+        <router-link :to="{ name: 'DimensionalWeight' }" class="navbar-link is-arrowless">
+          体積重量計算
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
