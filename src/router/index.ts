@@ -23,6 +23,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "compare" */ '@/views/Compare.vue'),
       },
       {
+        path: 'json-search',
+        name: 'JsonSearch',
+        component: () => import(/* webpackChunkName: "json-search" */ '@/views/JsonSearch.vue'),
+      },
+      {
         path: 'sku',
         name: 'Sku',
         component: () => import(/* webpackChunkName: "sku" */ '@/views/Sku.vue'),

@@ -19,6 +19,11 @@
         </router-link>
       </div>
       <div class="navbar-item is-hoverable">
+        <router-link :to="{ name: 'JsonSearch' }" class="navbar-link is-arrowless">
+          JsonSearch
+        </router-link>
+      </div>
+      <div class="navbar-item is-hoverable">
         <router-link :to="{ name: 'Sku' }" class="navbar-link is-arrowless">
           SKUコード生成
         </router-link>
