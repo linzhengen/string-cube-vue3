@@ -7,9 +7,9 @@
 </template>
 
 <script lang="ts">
+import { Options, Vue } from 'vue-class-component';
 import AppHeader from '@/components/App/Header.vue';
 import AppFooter from '@/components/App/Footer.vue';
-import { Options, Vue } from 'vue-class-component';
 
 @Options({
   components: {

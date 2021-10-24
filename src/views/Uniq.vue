@@ -33,8 +33,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { handleClipboard } from '@/composables/clipboard';
 import _ from 'lodash';
+import { handleClipboard } from '@/composables/clipboard';
 
 export default defineComponent({
   name: 'Uniq',

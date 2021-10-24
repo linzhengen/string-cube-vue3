@@ -30,8 +30,8 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue';
-import Navbar from '@/components/App/Navbar.vue';
 import { useStore } from 'vuex';
+import Navbar from '@/components/App/Navbar.vue';
 import { key } from '@/store';
 
 export default defineComponent({
