@@ -66,7 +66,7 @@ export default defineComponent({
   name: 'JsonSearch',
   data() {
     return {
-      jsonPath: '$.skuItemList.results.*.itemBasicInfo.itemNumber.fieldValue',
+      jsonPath: '$.skuItemList.results.*.itemBasicInfo.manageNumber.fieldValue',
       rawDataPlaceholder: '',
       convertedDataPlaceholder: '',
     };
