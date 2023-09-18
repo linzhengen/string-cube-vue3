@@ -66,85 +66,231 @@ export default defineComponent({
   name: 'JsonSearch',
   data() {
     return {
-      jsonPath: '$.itemList.results.*.manageNumber.fieldValue',
+      jsonPath: '$.skuItemList.results.*.itemBasicInfo.itemNumber.fieldValue',
       rawDataPlaceholder: '',
       convertedDataPlaceholder: '',
     };
   },
   setup() {
     const rawData = ref<string>(`{
-  "itemList" : {
+  "skuItemList" : {
     "numFound" : 1,
     "results" : [ {
       "shopId" : "356763",
+      "itemId" : 10035435,
       "itemType" : "NORMAL",
-      "draftItem" : false,
       "image" : {
-        "location" : {
-          "fieldValue" : "https://image.rakuten.co.jp/shopload/cabinet/image225/99yyh-039_1.jpg",
-          "thumbnailUrl" : "https://tshop.r10s.jp/shopload/cabinet/image225/99yyh-039_1.jpg"
+        "imageUrl" : {
+          "fieldValue" : "https://image.rakuten.co.jp/shopload/cabinet/image444/98shisyr-001_1.jpg"
         },
+        "thumbnailUrl" : "https://tshop.r10s.jp/shopload/cabinet/image444/98shisyr-001_1.jpg",
         "alt" : {
-          "fieldValue" : "ニットカーディガンレディース韓国風"
+          "fieldValue" : "ハイネックリブニットトップス長袖韓国風トップス長袖ニットソー女性タイトトップス【メール便送料無料】"
         }
       },
-      "title" : {
-        "fieldValue" : {
-          "ja-JP" : "ニットカーディガン レディース 韓国風"
+      "itemBasicInfo" : {
+        "manageNumber" : {
+          "fieldValue" : "98shisyr-001"
         },
-        "errorMessage" : { }
-      },
-      "pc" : {
-        "fieldValue" : {
-          "ja-JP" : "ニットソー/上品 大人 女性/秋冬"
+        "itemNumber" : {
+          "fieldValue" : "98SHISYR-001"
         },
-        "errorMessage" : { }
-      },
-      "standardPrice" : {
-        "fieldValue" : {
-          "currency" : "JPY",
-          "amount" : "5850"
+        "title" : {
+          "fieldValue" : "ハイネック リブニットトップス 長袖韓国風 トップス 長袖 ニットソー 女性タイトトップス【メール便送料無料】"
+        },
+        "tagline" : {
+          "fieldValue" : "韓国風 トップス/長袖 ニットソー/女性タイトトップス"
+        },
+        "showItem" : {
+          "fieldValue" : false
+        },
+        "searchVisibility" : {
+          "fieldValue" : true
         }
       },
-      "taxRate" : {
-        "fieldValue" : "0.1"
-      },
-      "taxIncluded" : {
-        "fieldValue" : true
-      },
-      "manageNumber" : {
-        "fieldValue" : "99yyh-039"
-      },
-      "inventoryType" : {
-        "fieldValue" : "SKU"
-      },
-      "variantMappedInventories" : {
-        "fieldValue" : {
-          "139683" : {
-            "quantity" : "12"
-          },
-          "139684" : {
-            "quantity" : "15"
-          }
+      "itemPriceInfo" : {
+        "taxRate" : {
+          "fieldValue" : "0.1"
+        },
+        "taxIncluded" : {
+          "fieldValue" : true
         }
       },
-      "purchasablePeriod" : {
-        "fieldValue" : { }
-      },
-      "hideItem" : {
-        "fieldValue" : true
-      },
-      "accessPassword" : { },
-      "searchVisibility" : {
-        "fieldValue" : "ALWAYS_VISIBLE"
+      "orderInfo" : {
+        "purchasablePeriod" : {
+          "fieldValue" : { }
+        },
+        "displayNormalCartButton" : {
+          "fieldValue" : true
+        }
       },
       "itemPointUp" : {
+        "pointOptimizationFlag" : {
+          "fieldValue" : false
+        },
         "pointRate" : { },
         "start" : { },
         "end" : { }
       },
+      "variationInfo" : {
+        "variationInfoVariants" : [ {
+          "selectorValues" : {
+            "fieldValue" : {
+              "カラー" : "ベージュ",
+              "サイズ" : "ワンサイズ"
+            }
+          },
+          "skuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-BE-FF"
+          },
+          "merchantDefinedSkuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-BE-FF"
+          },
+          "standardPrice" : {
+            "fieldValue" : "3406"
+          },
+          "quantity" : {
+            "fieldValue" : "0"
+          },
+          "showSku" : {
+            "fieldValue" : false
+          },
+          "skuImage" : {
+            "imageUrl" : {
+              "fieldValue" : "https://image.rakuten.co.jp/shopload/cabinet/image444/98shisyr-001-be.jpg"
+            },
+            "thumbnailUrl" : "https://tshop.r10s.jp/shopload/cabinet/image444/98shisyr-001-be.jpg",
+            "alt" : { }
+          },
+          "isAsuraku" : false
+        }, {
+          "selectorValues" : {
+            "fieldValue" : {
+              "カラー" : "ブラック",
+              "サイズ" : "ワンサイズ"
+            }
+          },
+          "skuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-BK-FF"
+          },
+          "merchantDefinedSkuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-BK-FF"
+          },
+          "standardPrice" : {
+            "fieldValue" : "3406"
+          },
+          "quantity" : {
+            "fieldValue" : "0"
+          },
+          "showSku" : {
+            "fieldValue" : false
+          },
+          "skuImage" : {
+            "imageUrl" : {
+              "fieldValue" : "https://image.rakuten.co.jp/shopload/cabinet/image444/98shisyr-001-bk.jpg"
+            },
+            "thumbnailUrl" : "https://tshop.r10s.jp/shopload/cabinet/image444/98shisyr-001-bk.jpg",
+            "alt" : { }
+          },
+          "isAsuraku" : false
+        }, {
+          "selectorValues" : {
+            "fieldValue" : {
+              "カラー" : "モスグリーン",
+              "サイズ" : "ワンサイズ"
+            }
+          },
+          "skuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-GR-FF"
+          },
+          "merchantDefinedSkuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-GR-FF"
+          },
+          "standardPrice" : {
+            "fieldValue" : "3406"
+          },
+          "quantity" : {
+            "fieldValue" : "0"
+          },
+          "showSku" : {
+            "fieldValue" : false
+          },
+          "skuImage" : {
+            "imageUrl" : {
+              "fieldValue" : "https://image.rakuten.co.jp/shopload/cabinet/image444/98shisyr-001-gr.jpg"
+            },
+            "thumbnailUrl" : "https://tshop.r10s.jp/shopload/cabinet/image444/98shisyr-001-gr.jpg",
+            "alt" : { }
+          },
+          "isAsuraku" : false
+        }, {
+          "selectorValues" : {
+            "fieldValue" : {
+              "カラー" : "ライトグレー",
+              "サイズ" : "ワンサイズ"
+            }
+          },
+          "skuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-LG-FF"
+          },
+          "merchantDefinedSkuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-LG-FF"
+          },
+          "standardPrice" : {
+            "fieldValue" : "3406"
+          },
+          "quantity" : {
+            "fieldValue" : "0"
+          },
+          "showSku" : {
+            "fieldValue" : false
+          },
+          "skuImage" : {
+            "imageUrl" : {
+              "fieldValue" : "https://image.rakuten.co.jp/shopload/cabinet/image444/98shisyr-001-lg.jpg"
+            },
+            "thumbnailUrl" : "https://tshop.r10s.jp/shopload/cabinet/image444/98shisyr-001-lg.jpg",
+            "alt" : { }
+          },
+          "isAsuraku" : false
+        }, {
+          "selectorValues" : {
+            "fieldValue" : {
+              "カラー" : "ホワイト",
+              "サイズ" : "ワンサイズ"
+            }
+          },
+          "skuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-WH-FF"
+          },
+          "merchantDefinedSkuManageNumber" : {
+            "fieldValue" : "98SHISYR-001-WH-FF"
+          },
+          "standardPrice" : {
+            "fieldValue" : "3406"
+          },
+          "quantity" : {
+            "fieldValue" : "0"
+          },
+          "showSku" : {
+            "fieldValue" : false
+          },
+          "skuImage" : {
+            "imageUrl" : {
+              "fieldValue" : "https://image.rakuten.co.jp/shopload/cabinet/image444/98shisyr-001-wh.jpg"
+            },
+            "thumbnailUrl" : "https://tshop.r10s.jp/shopload/cabinet/image444/98shisyr-001-wh.jpg",
+            "alt" : { }
+          },
+          "isAsuraku" : false
+        } ]
+      },
+      "accessPassword" : { },
+      "unlimitedInventoryFlag" : false,
       "isDeleted" : false,
-      "isAsuraku" : true
+      "isAsuraku" : false,
+      "isDraftItem" : false,
+      "isSingleSku" : false
     } ]
   }
 }`);
